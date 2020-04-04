@@ -1,0 +1,15 @@
+.inner {
+    $marginSize : 10px 40px 10px 40px;
+    $width : 150px;
+    $color : #ffac0e;
+    
+    background-color: $color;
+    margin: $marginSize;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

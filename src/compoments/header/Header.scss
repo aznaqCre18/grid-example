@@ -1,0 +1,21 @@
+.header {
+    $marginSize : 10px 40px 20px 40px;
+    $fontSize : 20px;
+    $bgcolor : #fa376c;
+    $color : #faf8e0;
+
+    margin: $marginSize;
+    font-size: $fontSize;
+    font-weight: 500;
+    padding: 10px;
+    background-color: $bgcolor;
+    border-radius: 10px;
+    color: $color;
+    transition: .2s;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+

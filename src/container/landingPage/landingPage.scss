@@ -1,0 +1,119 @@
+$marginSizeHead : 10px 40px 20px 40px;
+$fontSizeHead : 20px;
+$bgcolorHead : #fa376c;
+$colorHead : #faf8e0;
+
+$bgcolorFoot : #7a6e71;
+$colorFoot : #faf8e0;
+
+$marginSizeMain : 10px 40px 20px 40px;
+$fontSizeMain : 20px;
+$bgcolorMain : #ea2336;
+$colorMain : #faf8e0;
+
+$width : 150px;
+$color : #ffac0e;
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "child main"
+        "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: .5fr 1fr 1fr .2fr;
+    margin: 20px 40px 10px 40px;
+}
+
+header {
+    background-color: $bgcolorHead;
+    color: $colorHead;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    grid-area: header;
+}
+
+nav {
+    background-color: $color;
+    color: $colorMain;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    grid-area: nav;
+}
+
+.childNav {
+    background-color: $color;
+    color: $colorMain;
+    grid-area: child;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+main {
+    background-color: $bgcolorMain;
+    color: $colorMain;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    grid-area: main;
+    height: 20rem;
+}
+
+footer {
+    background-color: $bgcolorFoot;
+    color: $colorMain;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    grid-area: footer;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "nav child"
+            "main main"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .2fr .1fr 1fr .2fr;
+        margin: 20px 40px 10px 40px;
+    }
+}
+
+@media only screen and (max-width: 586px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "child child"
+            "main main"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .2fr .1fr .1fr 1fr .2fr;
+        margin: 20px 40px 10px 40px;
+    }
+
+}
